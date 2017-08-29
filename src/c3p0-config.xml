@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<!-- 四大参数的设置 -->
+		<property name="jdbcUrl">
+			jdbc:mysql://localhost:3306/customers?useUnicode=true&amp;characterEncoding=utf8&amp;rewriteBatchedStatements=true
+		</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">123</property>
+		
+		<!-- 池参数的设置 -->
+		<property name="acquiredIncrement">3</property>
+		<property name="maxPoolSize">20</property>
+		<property name="minPoolSize">5</property>
+		<property name="initialPoolSize">10</property>
+		
+		
+	</default-config>
+	
+	
+</c3p0-config>
+
+
